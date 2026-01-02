@@ -1,5 +1,13 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
-const projectModel = {
+const UserSchema = {
+    name: {
+        type: String,
+    },
+    email: {
+        type: String,
+        unique: true,
+        required: true,
+    }
     
 }
